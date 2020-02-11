@@ -8,7 +8,9 @@ class Aether
 	: public olc::PixelGameEngine
 {
 private:
-	ClockHandle _secondhandle;
+	ClockHandle _secondHandle;
+	ClockHandle _minuteHandle;
+	ClockHandle _hourHandle;
 
 public:
 	Aether();
