@@ -2,13 +2,13 @@
 #define AETHER_H
 
 #include "olcPixelGameEngine/olcPixelGameEngine.h"
+#include "ClockHandle.h"
 
-class Rocket;
 class Aether
 	: public olc::PixelGameEngine
 {
-
 private:
+	ClockHandle _secondhandle;
 
 public:
 	Aether();
@@ -18,7 +18,8 @@ public:
 	virtual bool OnUserUpdate(float fElapsedTime);
 
 private:
-
+	bool _isInited = false;
+	void init();
 };
 
 #endif // AETHER_H

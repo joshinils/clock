@@ -14,6 +14,8 @@ add_executable("${PROJECT_NAME}"
 	"main.cpp"
 	"Aether.h"
 	"Aether.cpp"
+	"ClockHandle.h"
+	"ClockHandle.cpp"
 	"pge.cpp"
 	"olcPixelGameEngine/olcPixelGameEngine.h"
 )
